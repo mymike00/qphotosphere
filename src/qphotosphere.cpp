@@ -106,8 +106,6 @@ void QmlPhotoSphereRenderNode::releaseResources()
         delete m_vao;
     m_vao = 0;
 
-    if (m_quadric)
-        delete m_quadric;
     m_quadric = 0;
 
     if (m_texPhotoSphere)
@@ -415,5 +413,3 @@ void QmlPhotoSphere::updateSphere()
     polish();
     update();
 }
-
-
