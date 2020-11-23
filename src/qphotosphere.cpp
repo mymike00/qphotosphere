@@ -60,7 +60,7 @@ static double sphereRadius = 50.0;
 static QByteArray versionedShaderCode(const char *src)
 {
     QByteArray versionedSrc;
-    versionedSrc.append(QByteArrayLiteral("#version 330 compatibility\n"));
+    versionedSrc.append(QByteArrayLiteral("#version 130\n"));
     versionedSrc.append(src);
     return versionedSrc;
 }
